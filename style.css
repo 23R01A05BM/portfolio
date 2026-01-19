@@ -1,0 +1,116 @@
+:root {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --card: #1e293b;
+  --accent: #38bdf8;
+}
+
+body.light {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --card: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: var(--card);
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 48px;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: var(--accent);
+  color: #000;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-box, .project-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.project-links a {
+  margin-right: 15px;
+  color: var(--accent);
+}
+
+.badge {
+  background: orange;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
